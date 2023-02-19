@@ -1,0 +1,16 @@
+INSERT INTO Genre
+VALUES(1,'fantasy')
+
+INSERT INTO Book(name, year, autor,genre)
+VALUES('book1', 1233, 'autor1',1)
+
+INSERT INTO Book(name, year, autor,genre)
+VALUES('book2', 2023, 'autor2',1),
+('book3', 2022, 'autor3',1),
+('book4', 2021, 'autor4',1)
+
+Execution finished with errors.
+Result: FOREIGN KEY constraint failed
+At line 1:
+DELETE FROM Genre
+WHERE id = 1;
