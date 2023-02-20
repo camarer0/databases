@@ -105,7 +105,6 @@ public class Actions {
         Statement stat = conn.createStatement();
         stat.execute(String.format("UPDATE types SET type = '%s' WHERE id = %d;", new_type,type_id));
         System.out.println("Успешно");
-
     }
     public  static void get_type(int type_id, Connection conn) throws SQLException {
         Statement stat = conn.createStatement();
